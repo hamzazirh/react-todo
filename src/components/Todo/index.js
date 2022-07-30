@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import Form from './Form';
 import List from './List';
+import Footer from './Footer';
 import './style.css'
 
 function Todo() {
@@ -13,6 +14,7 @@ function Todo() {
         <h1>todos</h1>
         <Form todos={todos} setTodos={setTodos} />
         <List todos={todos} setTodos={setTodos} />
+        <Footer todos={todos} setTodos={setTodos} />
       </header>
     </div>
   )

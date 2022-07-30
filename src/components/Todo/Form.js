@@ -9,7 +9,7 @@ export default function Form({ todos, setTodos }) {
     const submitForm = (e) => {
         e.preventDefault();
         if (form === "") {
-            alert("Boş Bırakılamaz..")
+           return alert("Boş Bırakılamaz..")
         }
 
         setTodos([...todos, { id: Math.floor((Math.random() * 100000) + 1), title: form, status: false }])
