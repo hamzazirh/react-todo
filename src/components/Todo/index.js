@@ -6,8 +6,12 @@ import Footer from './Footer';
 import './style.css'
 
 function Todo() {
-  const [todos, setTodos] = useState([]);
-
+  const [todos, setTodos] = useState([
+    {id:1,title:"Learn JavaScript", status:true},
+    {id:2, title:"Learn React", status: false},
+    {id:3, title:"Have a life!", status: false}
+  ]);
+  
   return (
     <div className='todoapp'>
       <header className='header'>
