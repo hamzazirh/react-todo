@@ -15,13 +15,13 @@ function Footer({ todos, setTodos }) {
             </span>
             <div className="filters">
                 <li>
-                    <a data-text= href="#/" className="selected">All</a>
+                    <a  href="#/" className="selected">All</a>
                 </li>
                 <li>
-                    <a data-text= href="#/">Active</a>
+                    <a  href="#/">Active</a>
                 </li>
                 <li>
-                    <a data-text= href="#/">Completed</a>
+                    <a  href="#/">Completed</a>
                 </li>
             </div>
             <button className="clear-completed" onClick={clearCompleted}>
